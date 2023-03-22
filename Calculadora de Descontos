@@ -1,0 +1,41 @@
+print('Calculadora de desconto')
+print('Marque o produto desejado para calcular o desconto')
+print('1. Partes Inferiores')
+print('2. Partes Superiores')
+print('3. Sapatos e bolsas')
+print('4. Acessórios e Joias')
+print('5. Cancelar')
+resposta=int(input('Digite o numero correspondente ao seu produto:'))
+
+if resposta == 1:
+    print('Você ganhou um desconto de 10%')
+    produto=float(input('Digite o valor do produto: '))
+    desconto=(10 / 100) * produto
+    valorcd=produto - desconto
+    print('O seu desconto é de: ',desconto)
+    print('O produto com desconto ficou: ',valorcd)
+
+elif resposta == 2:
+    print('Você ganhou um desconto de 5%!')
+    produto=float(input('Digite o valor do produto: '))
+    desconto=(5 / 100) * produto
+    valorcd=produto - desconto
+    print('O seu desconto é de: ',desconto)
+    print('O produto com desconto ficou: ',valorcd)
+
+elif resposta == 3:
+    print('Você ganhou um desconto de 20%!')
+    produto=float(input('Digite o valor do produto: '))
+    desconto=(20 / 100) * produto
+    valorcd=produto - desconto
+    print('O seu desconto é de: ',desconto)
+    print('O produto com desconto ficou: ',valorcd)
+elif resposta == 4:
+    print('Você ganhou um desconto de 15%!')
+    produto=float(input('Digite o valor do produto: '))
+    desconto=(15 / 100) * produto
+    valorcd=produto - desconto
+    print('O seu desconto é de: ',desconto)
+    print('O produto com desconto ficou: ',valorcd)
+else:
+    print('Operação Cancelada')
