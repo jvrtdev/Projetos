@@ -1,1 +1,66 @@
+#Definindo funções
+def soma(num1, num2):
+    s=num1 + num2
+    return s
 
+def divi(num1, num2):
+    d= num1 / num2
+    return d
+def sub(num1, num2):
+    sb= num1 - num2
+    return sb
+def multi(num1, num2):
+    m=num1 * num2
+    return m
+#programa que faz operações matematicas usando funções
+def menu():
+    c=int(input('Digite 0 para começar ou qualquer numéro para parar:'))
+    while c == 0:
+        print('==========Operações Matemáticas==========')
+        op=int(input('Digite\n 1. Para soma\n 2. Para subtração\n 3. Para mulltiplicação\n 4. Para divisão\n 5. Mostrar todas as operações\n Digite aqui:'))
+        
+        if op == 1:
+            print('--------Somatório--------')
+            num1=float(input('Digite o um numero: '))
+            num2=float(input('Digite o outro numero: '))
+            print('O somatório é',soma(num1,num2))
+            c=int(input('Digite 0 para continuar ou qualquer numéro para parar:'))
+
+        
+        elif op == 2:
+            print('--------Subtração--------')
+            num1=float(input('Digite um número: '))
+            num2=float(input('Digite outro número: '))
+            if num1 > num2:
+                print('A subtração é = ',sub(num1, num2))
+            else:
+                print('A subtração é = ',sub(num2, num1))
+            c=int(input('Digite 0 para continuar ou qualquer numéro para parar:'))
+
+        elif op == 3:
+            print('--------Multiplicação--------')
+            num1=float(input('Digite um número: '))
+            num2=float(input('Digite um número: '))
+            print('A multiplicação é = ',multi(num1, num2))
+            c=int(input('Digite 0 para continuar ou qualquer numéro para parar:'))
+        
+        elif op == 4:
+            print('--------Divisão--------')
+            num1=float(input('Digite um número: '))
+            num2=float(input('Digite outro número: '))
+            print('A divisão é = ',divi(num1, num2)) 
+            c=int(input('Digite 0 para continuar ou qualquer numéro para parar:'))
+        
+        elif op == 5:
+            print('-_-_-_-_-_Operações-_-_-_-_-_')
+            num1=float(input('Digite um número: '))
+            num2=float(input('Digite outro número: '))
+            print('A soma é = ',soma(num1, num2))
+            print('A subtração é = ',sub(num1,num2))
+            print('A divisão é = ',divi(num1, num2))
+            print('A multiplicação é =',multi(num1,num2))
+            c=int(input('Digite 0 para continuar ou qualquer numéro para parar:'))
+        else:
+            print('Opção inexistente!')
+            c=int(input('Digite 0 para continuar ou qualquer numéro para parar:'))           
+menu()
